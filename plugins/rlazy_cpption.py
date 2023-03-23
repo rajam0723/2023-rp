@@ -27,6 +27,6 @@ async def delete_caption(client, message):
 async def see_caption(client, message):
     caption = await db.get_caption(message.from_user.id)  
     if caption:
-       await message.reply_text(f"**Note: Lazy_Mode active ✅\n\nYour Caption:-**\n\n`{caption}`")
+       await message.reply_text(f"**Note: Dudu_Mode active ✅\n\nYour Caption:-**\n\n`{caption}`")
     else:
        await message.reply_text("😔**Sorry ! No Caption found...**😔")
